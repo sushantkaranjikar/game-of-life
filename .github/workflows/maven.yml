@@ -28,7 +28,6 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
   
-    - name: Copy Jar to Tomcat
+    - name: Copy War to Tomcat
       run:  cp -r /root/actions-runner/_work/game-of-life/game-of-life/gameoflife-web/target/gameoflife.war /root/webserver/apache-tomcat-9.0.71/webapps
 
-   
